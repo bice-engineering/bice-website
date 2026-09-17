@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BICE | Industrial Engineering Solutions</title>
+
+  <meta name="description" content="BICE provides engineering consulting, maintenance, reliability, compressed air solutions and industrial services for manufacturing and industrial organizations.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1c2b39;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .brand {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #123b63;
+    }
+
+    nav a {
+      color: #123b63;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+    }
+
+    .hero {
+      min-height: 560px;
+      background: linear-gradient(135deg, #0b2c49, #17557f);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 75px 8%;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero-label {
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #b9d9ed;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      font-weight: 400;
+      color: #d8e8f2;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: #123b63;
+      padding: 13px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      color: #123b63;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      max-width: 760px;
+      margin: auto;
+      color: #667788;
+      font-size: 17px;
+    }
+
+    .divisions {
+      background: #f4f7f9;
+    }
+
+    .division-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .division-card {
+      background: white;
+      padding: 35px;
+      border-radius: 8px;
+      border: 1px solid #dfe7ed;
+    }
+
+    .division-card h3 {
+      color: #123b63;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .division-subtitle {
+      color: #507087;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .division-card p {
+      margin-bottom: 20px;
+    }
+
+    .division-card a {
+      color: #123b63;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .consulting {
+      background: white;
+    }
+
+    .service-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      border: 1px solid #e0e6eb;
+      border-radius: 7px;
+      padding: 28px;
+    }
+
+    .service-card h3 {
+      color: #123b63;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background: #f4f7f9;
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .expertise {
+      margin-top: 28px;
+      color: #123b63;
+      font-weight: 700;
+    }
+
+    .contact {
+      background: #123b63;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      margin: 7px 0;
+    }
+
+    .contact a {
+      color: white;
+    }
+
+    footer {
+      background: #0a263e;
+      color: #c9d5de;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .division-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="brand">BICE</div>
+
+  <nav>
+    <a href="#divisions">Divisions</a>
+    <a href="#consulting">Consulting</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-label">
+      BINATIONAL INDUSTRIAL CONSULTING & ENGINEERING
+    </div>
+
+    <h1>
+      Engineering. Reliability.<br>
+      Industrial Solutions.
+    </h1>
+
+    <h2>
+      Practical engineering solutions for industrial operations.
+    </h2>
+
+    <p>
+      BICE combines engineering consulting, maintenance expertise,
+      compressed air solutions and industrial field services to help
+      organizations improve reliability, efficiency and operational
+      performance.
+    </p>
+
+    <a class="button" href="#divisions">
+      Explore Our Solutions
+    </a>
+
+  </div>
+
+</section>
+
+<section class="divisions" id="divisions">
+
+  <div class="section-title">
+
+    <h2>Our Divisions</h2>
+
+    <p>
+      Integrated industrial capabilities from engineering strategy
+      and reliability improvement to equipment solutions and field execution.
+    </p>
+
+  </div>
+
+  <div class="division-grid">
+
+    <div class="division-card">
+
+      <h3>BICE Consulting</h3>
+
+      <div class="division-subtitle">
+        Engineering & Maintenance Consulting
+      </div>
+
+      <p>
+        Engineering, maintenance, reliability and facilities consulting
+        focused on measurable improvements in industrial performance.
+      </p>
+
+      <a href="#consulting">Explore Consulting →</a>
+
+    </div>
+
+    <div class="division-card">
+
+      <h3>BICE Compressed Air Solutions</h3>
+
+      <div class="division-subtitle">
+        Industrial Compressed Air Systems
+      </div>
+
+      <p>
+        Technical support, maintenance, parts and engineering solutions
+        for industrial compressed air systems.
+      </p>
+
+      <a href="#compressed-air">Explore Compressed Air →</a>
+
+    </div>
+
+    <div class="division-card">
+
+      <h3>SOGU Industrial Services</h3>
+
+      <div class="division-subtitle">
+        Machinery Installation & Industrial Services
+      </div>
+
+      <p>
+        Field execution capabilities for machinery installation,
+        equipment relocation and industrial service projects.
+      </p>
+
+      <a href="#sogu">Explore Industrial Services →</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="consulting" id="consulting">
+
+  <div class="section-title">
+
+    <h2>BICE Consulting</h2>
+
+    <p>
+      Engineering and maintenance expertise designed to improve
+      reliability, operational control and asset performance.
+    </p>
+
+  </div>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <h3>Maintenance & Facilities Assessment</h3>
+      <p>
+        Structured evaluation of maintenance operations, facilities,
+        equipment condition, processes, risks and improvement opportunities.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Maintenance Management</h3>
+      <p>
+        Maintenance planning, preventive maintenance strategies,
+        KPI development, backlog management and remote management support.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>CMMS & Reliability</h3>
+      <p>
+        CMMS implementation, asset management, preventive maintenance
+        programs and reliability improvement strategies.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Engineering Projects</h3>
+      <p>
+        Engineering support for CAPEX projects, equipment installation,
+        commissioning, specifications and vendor management.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Energy Efficiency</h3>
+      <p>
+        Identification and development of energy-saving opportunities
+        in industrial equipment, utilities and facility systems.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Industry 4.0</h3>
+      <p>
+        Digital transformation support for maintenance operations,
+        data visibility, performance monitoring and decision-making.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="compressed-air">
+
+  <div class="section-title">
+
+    <h2>BICE Compressed Air Solutions</h2>
+
+    <p>
+      Industrial compressed air expertise focused on equipment reliability,
+      system performance, maintenance and energy efficiency.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="about" id="sogu">
+
+  <div class="section-title">
+
+    <h2>SOGU Industrial Services</h2>
+
+    <p>
+      Industrial field services supporting machinery installation,
+      equipment relocation and project execution.
+    </p>
+
+  </div>
+
+</section>
+
+<section id="about">
+
+  <div class="section-title">
+    <h2>About BICE</h2>
+  </div>
+
+  <div class="about-content">
+
+    <p>
+      BICE – Binational Industrial Consulting & Engineering provides
+      practical engineering and industrial solutions focused on reliability,
+      efficiency and operational performance.
+    </p>
+
+    <p class="expertise">
+      Engineering • Maintenance • Reliability • Facilities •
+      Compressed Air • Energy Efficiency • CMMS • Industry 4.0
+    </p>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <h2>Contact BICE</h2>
+
+  <p><strong>Javier Gurrola</strong></p>
+
+  <p>Engineering & Maintenance Consultant</p>
+
+  <p>
+    Email:
+    <a href="mailto:jgurrola@sogu.mx">
+      jgurrola@sogu.mx
+    </a>
+  </p>
+
+  <p>
+    Phone:
+    <a href="tel:+19152700944">
+      +1 915 270 0944
+    </a>
+  </p>
+
+  <p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/javiergurrola/" target="_blank">
+      Javier Gurrola
+    </a>
+  </p>
+
+</section>
+
+<footer>
+
+  © 2026 BICE – Binational Industrial Consulting & Engineering.
+  All rights reserved.
+
+</footer>
+
+</body>
+</html>
